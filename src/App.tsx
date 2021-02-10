@@ -1,10 +1,10 @@
 /*
  * @Descripttion:
  * @version:
- * @Author: zoucw (zoucw@yunjiglobal.com)
+ * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-01-28 14:07:55
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-01 14:24:01
+ * @LastEditTime: 2021-02-10 22:40:29
  */
 
 import React, { Suspense } from 'react';
@@ -12,7 +12,6 @@ import { BrowserRouter as Router, Redirect, Switch, Route } from 'react-router-d
 import { hot } from "react-hot-loader/root";
 import routers from "@src/routers"
 import { Spin } from 'antd';
-
 
 function App() {
   return (

@@ -4,5 +4,20 @@
     "javascriptreact",
     { "language": "typescript", "autoFix": true },
     { "language": "typescriptreact", "autoFix": true }
-  ]
+  ],
+  "fileheader.customMade": {
+      "Descripttion": "",
+      "version": "",
+      "Author": "zoucw (326359613@qq.com)",
+      "Date": "",
+      "LastEditors": "",
+      "LastEditTime": ""
+  },
+  "fileheader.cursorMode": {
+      "name": "zoucw",
+      "test": "",
+      "msg": "",
+      "param": "",
+      "return": ""
+  }
 }

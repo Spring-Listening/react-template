@@ -1,3 +1,12 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: zoucw (326359613@qq.com)
+ * @Date: 2021-01-28 14:48:05
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-02-10 22:41:06
+ */
+
 import React from 'react';
 import { useHistory, Link } from 'react-router-dom'
 import { handleLoginPop, isNeedEnterInfo } from '@src/store/action/user';
@@ -29,12 +38,12 @@ function Home({routes}) {
         })
       }}>
         home按钮
-      </button> 
+      </button>
       <div>
         hahah=======dfslsfkkd
       </div>
     </div>
-    
+
   )
 }
 

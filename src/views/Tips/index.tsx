@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: zoucw (326359613@qq.com)
+ * @Date: 2021-01-28 14:20:56
+ * @LastEditors:
+ * @LastEditTime: 2021-02-10 22:41:35
+ */
 import React from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom'
 
@@ -13,7 +21,7 @@ function Tips({routes}) {
         {
           routes.map((item) => {
             return (
-              <Route 
+              <Route
                 key={item.path}
                 path={item.path}
                 render={() => (
@@ -25,7 +33,7 @@ function Tips({routes}) {
         }
       </Switch>
     </div>
-    
+
   )
 }
 
