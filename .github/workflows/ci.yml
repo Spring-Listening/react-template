@@ -1,0 +1,29 @@
+name: Build and deploy to github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Node v15.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 15.x
+        
+    - name: Checkout
+      uses: actions/checkout@master
+      
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build
+          
+    - name: Build and deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.5
+      with:
+        branch: gh-pages
+        folder: dist
