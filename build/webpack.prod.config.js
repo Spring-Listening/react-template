@@ -3,16 +3,16 @@
  * @version:
  * @Author: chunwen
  * @Date: 2021-11-02 10:31:59
- * @LastEditors:
- * @LastEditTime: 2022-01-19 19:50:10
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-01-19 22:00:08
  */
 const { merge } = require('webpack-merge');
 const baseConfig = require('./webpack.base.config');
 
 module.exports = merge(baseConfig, {
   mode: 'production',
-  publicPath: '/react-template',
-  devServer: {
-
-  }
+  output: {
+    publicPath: '/react-template',
+  },
+  devServer: {},
 });
