@@ -4,7 +4,7 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-01-28 14:07:55
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-01-19 15:37:56
+ * @LastEditTime: 2022-01-19 22:07:44
  */
 
 import React, { Suspense } from 'react';
@@ -17,23 +17,19 @@ function App() {
   return (
     <>
       <Suspense fallback={<Spin size="large" />}>
-        <Router>
+        <Router basename="/react-template">
           <Switch>
-            {
-              routers.map((item) => {
-                return (
-                  <Route
-                    exact={item.exact}
-                    key={item.path}
-                    path={item.path}
-                    render={() => (
-                      <item.component routes={item.children}/>
-                    )}
-                  />
-                )
-              })
-            }
-            <Redirect from='/*' to='/home' />
+            {routers.map((item) => {
+              return (
+                <Route
+                  exact={item.exact}
+                  key={item.path}
+                  path={item.path}
+                  render={() => <item.component routes={item.children} />}
+                />
+              );
+            })}
+            <Redirect from="/*" to="/home" />
           </Switch>
         </Router>
       </Suspense>
