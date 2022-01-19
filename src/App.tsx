@@ -4,11 +4,11 @@
  * @Author: zoucw (326359613@qq.com)
  * @Date: 2021-01-28 14:07:55
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-02-10 22:40:29
+ * @LastEditTime: 2022-01-19 15:37:56
  */
 
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Redirect, Switch, Route } from 'react-router-dom';
 import { hot } from "react-hot-loader/root";
 import routers from "@src/routers"
 import { Spin } from 'antd';
