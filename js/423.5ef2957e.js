@@ -1,0 +1,1 @@
+(self.webpackChunkmy_test_cli=self.webpackChunkmy_test_cli||[]).push([[423],{8423:(e,t,l)=>{"use strict";l.r(t),l.d(t,{default:()=>s});var c=l(7294),n=l(5977);const s=function(){var e=(0,n.TH)();console.log(e);var t=(0,n.UO)();return console.log(t),c.createElement("div",null,"dec============",c.createElement("button",null,"dec"))}}}]);
